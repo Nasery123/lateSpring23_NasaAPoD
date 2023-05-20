@@ -33,7 +33,7 @@ export class NasaController {
       // NOTE MAKE SURE THE VARIABLE YOU'RE PASSING THROUGH IS THE ONE YOU ALIASED
       await nasaService.selectDate(dateValue)
     } catch (error) {
-      logger.error('[ERROR]',error)
+      logger.error('[ERROR]', error)
       Pop.error(('[ERROR]'), error.message)
     }
   }
@@ -43,7 +43,7 @@ export class NasaController {
     try {
       await nasaService.getPictureOfDay()
     } catch (error) {
-      logger.error('[ERROR]',error)
+      logger.error('[ERROR]', error)
       Pop.error(('[ERROR]'), error.message)
     }
   }
